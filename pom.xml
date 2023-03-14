@@ -101,10 +101,25 @@
               <executable>python</executable>
               <arguments>
                 <argument>${project.build.directory}/classes/setup.py</argument>
+                <!-- <argument>install</argument> -->
                 <argument>bdist_wheel</argument>
               </arguments>
             </configuration>
           </execution>
+          <execution>
+              <id>pip-install</id>
+              <phase>generate-resources</phase>
+              <goals>
+                  <goal>exec</goal>
+              </goals>
+              <configuration>
+                  <executable>pip</executable>
+                  <arguments>
+                      <argument>install</argument>
+                      <argument>numpy</argument>
+                  </arguments>
+              </configuration>
+          </execution>          
           <execution>
             <id>run-python-script</id>
             <phase>package</phase>
@@ -112,6 +127,11 @@
               <goal>exec</goal>
             </goals>
             <configuration>
+              <executable>pip</executable>
+              <arguments>
+                <argument>install</argument>
+                <argument>numpy</argument>
+              </arguments>            
               <executable>python</executable>
               <arguments>
                 <argument>${project.build.directory}/classes/my_python_module/hello.py</argument>
