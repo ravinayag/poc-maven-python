@@ -1,0 +1,5 @@
+my_python_module.egg-info/PKG-INFO
+my_python_module.egg-info/SOURCES.txt
+my_python_module.egg-info/dependency_links.txt
+my_python_module.egg-info/requires.txt
+my_python_module.egg-info/top_level.txt

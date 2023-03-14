@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="I:\Tech-Consulting\python-maven-FL\my-python-module\target/classes">
+    <fileset dir="I:\Tech-Consulting\python-maven-FL\my-python-module/src/main/python"/>
+  </copy>
+</target>
+</project>
