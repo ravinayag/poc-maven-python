@@ -20,7 +20,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml -DskipTest
-    - run: pwd && ls -laRt
+      run: mvn -B package --file pom.xml 
     - name: Test the Maven build by java
       run: java -jar ./target/my-app-1.0-SNAPSHOT.jar
