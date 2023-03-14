@@ -101,7 +101,7 @@
               <executable>python</executable>
               <arguments>
                 <argument>${project.build.directory}/classes/setup.py</argument>
-                <argument>install</argument>
+                <argument>bdist_wheel</argument>
               </arguments>
             </configuration>
           </execution>
